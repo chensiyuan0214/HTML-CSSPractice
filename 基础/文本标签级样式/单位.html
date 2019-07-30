@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>单位</title>
+    <style type="text/css">
+
+        /*
+        长度单位
+            像素px
+                - 像素是我们在网页中使用的最多的一个单位，
+                    一个pixel就相当于我们屏幕中的一个小店，我们的屏幕是由pixel来组成的
+                    但是这些像素点，是不能直接看见。
+
+                   不同的显示器，一个像素的大小也不相同，
+                        显示效果越好越清晰，像素就越小，繁殖像素就越大。
+        */
+        .box{
+            width: 2000px;
+            height: 2000px;
+            background-color: red;
+        }
+
+
+        /*
+        用%来写更好维护
+
+        对于responsive的网页来说，用%作为单位是更好的方法
+        em
+            -em和百分比类似，他是相对于当前元素的字体大小来计算的
+            -1 em = 1 font-size(font-size是你在同一个地方设置好的)
+            -党使用em时,如果font-size改变，em也会随之改变
+            -当设置字体相关的样式是，经常会使用em
+        */
+        .box1{
+            font-size: 20px;
+            width: 2em;
+
+            height: 50%;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+        <div class="box1">
+
+        </div>
+
+    </div>
+
+
+</body>
+</html>

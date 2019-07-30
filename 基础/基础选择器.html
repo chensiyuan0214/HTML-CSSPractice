@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>基础选择器</title>
+    <style type="text/css">
+        /*
+        为页面中所有的p元素，设置一个字体颜色为红色
+        作用：通过元素选择器可以选择页面中的指定元素
+        用id来做选择器
+
+         */
+
+        /*
+        用id来做选择器，用font-size
+         */
+        #p1{
+            font-size:20px;
+        }
+
+        /*
+        类选择器：
+            -语法
+                .class{
+
+                }
+            一个元素可以同时被设置多个class，用空格隔开
+         */
+        .p2{
+            font-size:60px;
+            background-color:red;
+        }
+
+        /*
+        为选择器分组 合集
+        -   同时在这几个选择器里的元素会apply这个效果
+        -   语法： 选择器1， 选择器2， 选择器N{}
+         */
+
+        /*
+            通配选择器，
+            选中页面里的所有元素
+            语法：*{}
+         */
+
+        /*
+        交集
+        - 同时满足这几个选择器的元素会apply
+        语法:选择器1选择器2选择器n
+         */
+
+    </style>
+</head>
+<body>
+
+    <p id="p1">1</p>
+
+    <p class="p2">22</p>
+    <p class="p2">22</p>
+    <p class="p2">22</p>
+
+</body>
+</html>

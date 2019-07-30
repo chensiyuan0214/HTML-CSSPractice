@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性选择器</title>
+    <style type="text/css">
+        /*
+        为所有具有title属性的p元素，设置一个北京颜色为黄色
+        属性选择器
+        -作用：根据元素中的属性或属性值来选取指定元素
+        -语法：
+            [属性名] 选取含有指定属性的元素
+            [属性名="属性值"] 选取含有指定属性值的元素
+            [属性名 ^="属性值"] 选取属性值以指定内容开头的元素
+            [属性名$="属性值"] 选取属性值以指定内容皆为的元素
+         */
+
+        p[title]{
+            background-color:yellow;
+        }
+
+        p[title="hello"]{
+            background-color:blue;
+        }
+
+    </style>
+</head>
+<body>
+    <p title="我是title里的字">我是一个段落</p>
+    <p title="hello">我是一个段落</p>
+    <p>我是一个段落</p>
+    <p>我是一个段落</p>
+    <p>我是一个段落</p>
+    <p>我是一个段落</p>
+    <p>我是一个段落</p>
+    <p>我是一个段落</p>
+
+</body>
+</html>
