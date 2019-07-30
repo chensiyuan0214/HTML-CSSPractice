@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+
+        .box2{
+            /*
+            height和width是用来设置内容区的size
+            盒子的实际大小要把所有的属性大小都算进去
+            */
+            width:100px;
+            height: 100px;
+            background-color: #bfa;
+
+            /*
+            要为元素设置边框，必须要准备三个样式
+                1.color
+                2.style
+                3.width
+
+            边框的加粗是不会算到content里面去的
+            */
+            /*border-color:red;*/
+
+
+
+            /*!**/
+                /*边框样式是最多的，默认值是none*/
+
+                /*dotted 点状边框*/
+
+                /*一堆，上网去查*/
+            /**!*/
+            /*border-style:solid;*/
+            /*!**/
+            /*可以用来设置border的宽度*/
+                /*如果在border-width指定了4个值，会根据顺时针🔃方向一一设置*/
+
+                /*如果只指定了3个值，那少被设置的那个（左边的宽）会根据对边值来被设置*/
+
+                /*如果指定2个值，则上下 左右就好*/
+
+            /**!*/
+            /*border-width:10px;*/
+
+
+            /*
+            也可以用简写式设置边框的样式，宽度，颜色
+            没有任何的顺序要求
+            border一指定就是指定边框的每一侧
+
+            */
+            /*border-left: red 10px solid;*/
+            /*border: red 10px solid;*/
+
+            /*
+            可以把四条边先用border设置上，然后再用一个否定掉
+            */
+
+            border: red 10px solid;
+            border-top: none;
+
+        }
+    </style>
+</head>
+<body>
+
+    <!--
+        可以将设置设置为大类
+            当设置为大类时，浏览器会自动从大类中选择一种默认的去使用
+
+     -->
+    <p style="font-size: 50px; font-family: serif;">
+
+        我是一段文字，ABCDEFG
+    </p>
+    <div class ="box1"></div>
+
+
+    <div class = "box2"></div>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>外边距Margin</title>
+    <style type="text/css">
+        .box1{
+
+            width: 100px;
+            height: 100px;
+            background-color: #bfa;
+            border: 10px solid red;
+            /*
+                外边距指的是当前盒子与其他盒子之间的距离，
+                    他不会影响可见框的大小，而是会影响到盒子的位置。
+                    盒子有四个方向的外边距：
+                    margin-top
+                    margin-right
+                    margin-left
+                    margin-bottom
+
+                box1的父元素是body，所以他的margin就是box1和父元素之间的距离
+
+                设置box1的上外边距，盒子上边框和其他的盒子的距离
+            */
+            margin-top: 100px;
+
+
+            /*
+               由于box都是往上往左靠的，
+               所以当设置上和左的margin时，会导致盒子自身的位置改变
+               而如果是设置右和下margin，会改变其他盒子的位置
+            */
+
+
+            /*外边距也可以是一个负值，
+            则元素会往反方向移动，元素甚至可以重合
+
+            块元素还是算独占一行*/
+
+
+            /*外边距也可以设置auto，但是一般只给水平方向，不给垂直方向设置
+                水平auto：直接设置为最大值，占据一整行为止
+                垂直auto：0
+
+                如果将left和right同时设置为auto，那么left和right会被设置
+                成相同大的值，使这个子元素在父元素中居中
+            */
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+
+    <div class="box2"></div>
+</body>
+</html>

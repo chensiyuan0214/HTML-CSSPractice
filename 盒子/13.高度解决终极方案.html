@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>高度塌陷终极解决方案</title>
+    <style type="text/css">
+        .box1{
+
+            /*只有加了solid它才会显现出来*/
+            border: 1px red solid;
+
+        }
+
+        /*通过伪类after选中box1的后面*/
+        /*
+        可以通过after伪类向后添加一个空白的块元素，然后对其清除浮动
+            这样做不会添加多余的div元素，但是也能气到和加了div元素一样的效果，
+            几乎没有任何副作用
+
+        */
+        .clearfix:after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .clearfix{
+            /*因为在ie6中不支持，所以必须要加zoom1俩hasLayout*/
+            zoom: 1;
+        }
+
+        .box2{
+            height: 100px;
+            width: 100px;
+            background-color: #bbffaa;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1 clearfix">
+        <div class="box2"></div>
+
+    </div>
+
+</body>
+</html>
