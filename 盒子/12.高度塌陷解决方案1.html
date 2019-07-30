@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>高度塌陷解决方案1</title>
+    <style type="text/css">
+        .box1{
+            border: 10px red solid;
+            height:100px;
+            float: left;
+
+            /*
+            解决原理：
+            在页面中元素都有一个隐含的属性叫做：Block Formatting Context
+                简称BFC,该属性默认关闭，可以设置成打开
+                 1.父元素的垂直外边距不会和子元素重叠
+                 2.开启BFC的元素不会被浮动元素所覆盖
+                 3.开启BFC的父元素可以开启包含浮动的子元素
+            如何开启BFC：
+                1. 设置元素浮动
+                        - 虽然可以撑开父元素，但是会导致父元素丢失宽度
+                            而且使用这种方式，虽然不塌陷，也会导致下面这个元素上移，所以不能解决问题
+                            不推荐
+                2. 设置元素绝对定位
+                        - 和第1效果差不多   不推荐
+                3. 设置元素为inline-block
+                        - 会导致宽度丢失，不推荐
+
+                4. 将元素的overflow设置为一个非visible的值
+                        - 设置为hidden是最好的方式
+            */
+
+            /*display: inline-block;*/
+
+            overflow: hidden;
+
+        }
+
+        .box2{
+            width:100px;
+            height: 100px;
+            background-color: blue;
+
+            float: left;
+
+
+        }
+
+        .box3{
+            border: 10px red solid;
+
+        }
+    </style>
+</head>
+<body>
+<div class="box1">
+    <div class="box2"></div>
+</div>
+
+<div class="box3"></div>
+
+
+</body>
+</html>

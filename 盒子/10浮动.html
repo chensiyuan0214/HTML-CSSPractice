@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮动</title>
+    <style type="text/css">
+        .box1{
+            height: 200px;
+            width: 1000px;
+            background-color: red;
+            float: left;
+        }
+
+
+        /*
+            当一个元素设置浮动之后（float属性是一个非none的值），
+            元素会立即脱离文档流，元素脱离文档流之后，它下边的元素会立即向上移动
+            元素浮动以后，会尽量向页面的左上或者是右上浮动
+            直到遇到父元素的边框或者其他浮动元素
+            如果浮动元素上边是一个没有浮动的块元素，则浮动元素不超过块元素（块元素还是占了一行）
+            浮动的元素不会超过他上边的兄弟元素，最多最多一边齐
+
+
+        */
+        .box2{
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            float: left;
+        }
+
+        .box3{
+            height: 200px;
+            width: 200px;
+            background-color: yellowgreen;
+            float: right;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box3"></div>
+    <div class="box2"></div>
+
+</body>
+</html>
