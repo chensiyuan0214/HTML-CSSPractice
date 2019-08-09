@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+</head>
+<body>
+
+    <form action="target.html">
+
+        用户信息<input type="text" name="username"/>
+        密码<input type="password" name="passwoard"/>
+        <br/>
+        <br/>
+
+        <!--单选框， radio-->
+        性别<input type="radio" name="gender" value="male"/> 男
+            <input type="radio" name="gender" value="female"/> 女
+        <!--在type为radio的时候，比喻这个按钮像收音机一样，一个按钮被按下去另一个就会起来，
+        -->
+        <br/>
+        <br/>
+        <!--多选框-->
+        爱好<input type="checkbox" name="hobby" value="basketball"/> 篮球
+            <input type="checkbox" name="hobby" value="badminton"/> 羽毛球
+            <input type="checkbox" name="hobby" value="soccer"/> 足球
+            <input type="checkbox" name="hobby" value="table-tennies"/> 乒乓球
+        <br/>
+        <br/>
+        <input type = "submit"/>
+
+        <select name="star">
+
+            <optgroup label="男明星">
+                <option value="zbs">赵本山</option>
+                <option value="lzy">林志颖</option>
+            </optgroup>
+
+            <optgroup label="女明星">
+                <option value="scy">沈春阳</option>
+                <option value="lyf">刘亦菲</option>
+            </optgroup>
+
+
+        </select>
+
+    </form>
+
+</body>
+</html>
