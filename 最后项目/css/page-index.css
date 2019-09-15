@@ -7,3 +7,18 @@
 body{
     background: url("../img/upBackground.png") repeat-x;
 }
+
+.w{
+    width:  940px;
+    margin: 0 auto;
+}
+
+.header{
+    padding-top: 37px;
+    padding-bottom: 47px;
+}
+
+.logo{
+    padding-left: 15px;
+    padding-right: 15px;
+}
