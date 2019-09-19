@@ -54,6 +54,46 @@ body{
 }
 
 .banner{
+    /*因为absolute是让元素根据父系里的最近一个relative position的
+    进行absolute定位。如果banner不开启relative，那么posinterDiv的relative
+    position就会变成根据body*/
+    position: relative;
     height: 356px;
     background: url("../img/banner/banner-bg.png") no-repeat bottom center;
+}
+
+.pointerDiv{
+    position: absolute;
+    top:314px;
+    left:15px;
+}
+
+/*需要把pointerDiv变成块元素才行
+1.用Display inline block 但是用完之后如果你想要a之间有距离 ，
+那么你就必须在HTML里面把6个a都写在同一排，这显然是不合适的。
+所以不用inline block来做*/
+.pointerDiv a{
+    /*设置a浮动*/
+    float: left;
+
+    /*设置高和宽*/
+    height: 17px;
+    width: 17px;
+    background: url("../img/banner/button-unselected.png") no-repeat;
+    margin-left: 4px;
+}
+
+.pointerDiv .active,
+.pointerDiv a:hover{
+    background: url("../img/banner/button-selected.png") no-repeat;
+}
+
+.content{
+
+}
+
+.content  h1{
+    text-align: center;
+    font: bold 24px Georgia;
+    padding-top: 8px;
 }
