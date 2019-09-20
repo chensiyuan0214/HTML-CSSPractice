@@ -96,4 +96,18 @@ body{
     text-align: center;
     font: bold 24px Georgia;
     padding-top: 8px;
+    padding-bottom: 20px;
+    margin-bottom: 38px;
+
+}
+
+.content .pl, .content .cs, .content .uc{
+    float: left;
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+}
+
+.content .cs{
+    margin: 0px 20px;
 }
