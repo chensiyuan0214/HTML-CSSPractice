@@ -104,10 +104,45 @@ body{
 .content .pl, .content .cs, .content .uc{
     float: left;
     width: 300px;
-    height: 100px;
-    background-color: yellow;
 }
 
 .content .cs{
     margin: 0px 20px;
+}
+
+.content h2{
+    font: 21px Georgia;
+    color: #11719e;
+}
+
+.cotent .contentP{
+    font: 12px Helvetica;
+    color: #8c8c8c;
+}
+
+.content .imgContent{
+    width: 299px;
+    height: 190px;
+    background: url("../img/content/pic-background.png") no-repeat;
+    margin: 16px 0px 10px 0px;
+    padding-top: 12px;
+    text-align: center;
+}
+
+.content .contentP2{
+    height: 92px;
+    color: #3e3e3e;
+    font: 13px Helvetica;
+}
+
+.content .lm{
+    display: block;
+    width: 163px;
+    height: 40px;
+    background: url("../img/content/button.png") no-repeat;
+    font: 12px/40px Helvetica;
+    color: #016999;
+    text-indent: 1em;
+    margin-bottom: 35px;
+
 }
